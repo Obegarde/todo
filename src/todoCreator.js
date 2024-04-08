@@ -23,6 +23,6 @@ export function todoCreator(argTitle, argDescription, argDueDate,argPriority){
   
 
 
-
+    localStorage.setItem(id,JSON.stringify(todoObject));
     return todoObject;
 }

@@ -4,6 +4,10 @@ export function idCreator(){
         let idSuccess = false;
         let tempId;
         let createdIds = [];
+
+        if(storageChecker('ids')){
+            createdIds = JSON.parse(localStorage.getItem('ids'));
+        }
         while (!idSuccess) {
             let idCount = 0;
             tempId = Math.floor(Math.random() * 100000);
@@ -19,7 +23,7 @@ export function idCreator(){
                 break;
             }
         }
-       
+        localStorage.setItem('ids',JSON.stringify(createdIds));
        
         return tempId;
 }
