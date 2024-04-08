@@ -1,0 +1,23 @@
+Todo app:
+Each todo object should have: title(string), description(string), dueDate(date converted to string), priority(A,B,C,D), status(Not started, working, completed),
+a project object that can hold multiple todo objects, it should itself have the variables of a todo object.
+
+
+a factory to create a todo object
+a function to read a given todo object
+a function to update a given todo object
+a function to delete a given todo object
+a function that takes projects and saves them with localStorage Api
+a function that loads projects form localStorage
+
+function to creates dom elements.
+function that resets the dom,
+function to handle user input,
+
+
+interface:
+    View all projects.
+    View all todos in each project (probably just the title and duedate… perhaps changing color for different priorities).
+    Expand a single todo to see/edit its details.
+    Delete a todo.
+
