@@ -1,6 +1,6 @@
 Todo app:
 Each todo object should have: title(string), description(string), dueDate(date converted to string), priority(A,B,C,D), status(Not started, working, completed),
-a project object that can hold multiple todo objects, it should itself have the variables of a todo object.
+a project object that can hold multiple todo objects, it should itself have the variables of a todo object. Creation date, unique id,
 
 
 a factory to create a todo object
